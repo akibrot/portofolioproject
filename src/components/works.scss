@@ -1,0 +1,76 @@
+.workscont {
+  background-color: crimson;
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  gap: 75vw;
+  .left {
+    font-size: 70px;
+    margin-left: 10vw;
+    cursor: pointer;
+  }
+  .right {
+    font-size: 70px;
+    margin-right: 10vw;
+    cursor: pointer;
+  }
+  .box {
+    height: 350px;
+    width: 700px;
+    background-color: white;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:"375px") {
+      width: 350px;
+      height: 500px;
+      margin-top: -50px;
+      
+    }
+    .items {
+      flex: 0.4;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .icon {
+        color: white;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        padding: 20px;
+        background-color: blue;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .title {
+        padding-left: 20px;
+        padding-top: 8px;
+      }
+      .para {
+        p {
+          padding: 20px;
+        }
+      }
+    }
+    .image {
+      flex: 0.6;
+      background-color: blue;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

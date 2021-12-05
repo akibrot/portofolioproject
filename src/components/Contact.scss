@@ -1,0 +1,112 @@
+.contactcont {
+  display: flex;
+  @media (max-width: "375px") {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: inherit;
+    background-color: red;
+    background-image: url("../picsbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: "375px") {
+      display: none;
+    }
+  }
+  .right {
+    flex: 0.5;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: "375px") {
+      flex: 1;
+      flex-direction: column;
+    }
+    .form {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: "375px") {
+        width: 280px;
+      }
+      .email {
+        width: 400px;
+        background-color: white;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.671);
+        margin-bottom: 15px;
+        margin-top: 10px;
+        @media (max-width: "375px") {
+          width: 270px;
+        }
+        input {
+          width: 96%;
+          border: none;
+          background-color: white;
+          outline: none;
+        }
+      }
+      .content {
+        width: 400px;
+        background-color: white;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 15px -8px black;
+        @media (max-width: "375px") {
+          width: 270px;
+        }
+        textarea {
+          width: 96%;
+          border: none;
+          outline: none;
+        }
+      }
+      .igotit {
+        margin-top: 20px;
+        color: rgb(60, 167, 28);
+      }
+      .sendbtn {
+        width: 400px;
+        height: 40px;
+        color: crimson;
+        background-color: crimson;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        @media (max-width: "375px") {
+          width: 270px;
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          width: 300px;
+          cursor: pointer;
+          height: 40px;
+          color: white;
+          font-size: 1.1rem;
+        }
+      }
+      .sendbtn:hover {
+        box-shadow: 0px 0px 15px -8px black;
+      }
+    }
+  }
+}

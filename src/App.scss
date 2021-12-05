@@ -1,0 +1,27 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  .sections {
+    position: relative;
+    top: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 60px);
+      scroll-snap-align: start;
+    }
+  }
+}

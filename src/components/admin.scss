@@ -1,0 +1,121 @@
+.admincont {
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .left {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media (max-width:"375px") {
+      padding-bottom: 30px;
+      padding-top: 0px;
+    }
+  }
+  .right {
+    width: 100vw;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    .box {
+      background-color: blueviolet;
+      transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 390px;
+      width: 300px;
+      box-shadow: 0px 0px 15px -8px black;
+      margin-bottom: 10px;
+
+      .createlist {
+        height: inherit;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          h3 {
+            padding: 20px;
+            font-size: 1.5rem;
+          }
+          display: flex;
+        }
+        .form {
+          display: flex;
+          .input {
+            height: 40px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+              border: none;
+              outline: none;
+              width: 92%;
+            }
+          }
+          .button {
+            height: 40px;
+            margin-left: 2px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: white;
+            button {
+              background-color: transparent;
+              border: none;
+              font-weight: bold;
+              padding: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+        .created {
+          padding: 4px;
+          color: rgb(4, 255, 4);
+          font-weight: bold;
+          .red {
+            color: red;
+          }
+        }
+        .selectlist {
+          padding-top: 8px;
+          padding-bottom: 5px;
+          .listcont {
+            height: 40px;
+            width: 227px;
+            background-color: white;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            .number {
+              padding: 8px;
+              text-align: center;
+              margin-top: 4px;
+            }
+            .items {
+              width: 84%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .delete {
+                cursor: pointer;
+              }
+              .delete:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box:hover {
+      transform: scale(1.079);
+    }
+  }
+}

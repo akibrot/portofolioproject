@@ -1,0 +1,166 @@
+.intro {
+  display: flex;
+  @media (max-width: "375px") {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgcont {
+      background-color: crimson;
+
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../pic.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media (max-width: "375px") {
+        float: none;
+        width: 300px;
+        height: 300px;
+      }
+      img {
+        width: 0px;
+        // animation: rot 10s linear infinite;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .arrow {
+      .socialicons {
+        @media (max-width:"375px") {
+          margin-top: 50px;
+          
+        }
+        display: flex;
+        gap: 30px;
+        animation: none;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+        font-size: 2.2rem;
+        .tele {
+          color: rgb(41, 109, 41);
+          cursor: pointer;
+        }
+        .fb {
+          cursor: pointer;
+          color: blue;
+        }
+        .you {
+          cursor: pointer;
+          color: red;
+        }
+        .git {
+          cursor: pointer;
+          color: black;
+        }
+      }
+      .arrowdown {
+        margin: 0 auto;
+        padding-top: 70px;
+        color: black;
+        cursor: pointer;
+        animation: blin 2.2s infinite linear;
+        @media (max-width:"375px") {
+          padding-top: 15px;
+          margin-bottom: 35px;
+          
+        }
+      }
+      margin-top: 370px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      
+      
+      @media (max-width: "375px") {
+        margin-top: 150px;
+      }
+      .ic {
+        font-size: 30px;
+        @media (max-width: "375px") {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .content {
+      @media (max-width: "375px") {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: -90px;
+      }
+      position: relative;
+      h2 {
+        font-size: 2.5rem;
+        @media (max-width: "375px") {
+          font-size: 2rem;
+        }
+      }
+      h1 {
+        font-size: 3.2rem;
+        @media (max-width: "375px") {
+          font-size: 2.7rem;
+        }
+      }
+      h3 {
+        font-size: 2.2rem;
+        @media (max-width: "375px") {
+          font-size: 0rem;
+        }
+      }
+      .span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        width: 550px;
+        @media (max-width: "375px") {
+          display: none;
+        }
+        span {
+          color: crimson;
+          transition-duration: 1s;
+          -webkit-transition-duration: 1s;
+        }
+        b {
+          animation: blin 0.7s infinite linear;
+        }
+        @keyframes blin {
+          from {
+            opacity: 100%;
+          }
+          to {
+            opacity: 70%;
+          }
+          to {
+            opacity: 30%;
+          }
+          to {
+            opacity: 0%;
+          }
+        }
+      }
+    }
+  }
+}

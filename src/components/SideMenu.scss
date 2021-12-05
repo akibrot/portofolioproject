@@ -1,0 +1,42 @@
+.sidecont {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  top: 60px;
+  position: fixed;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.658);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .links {
+    width: 100vw;
+    height: 45px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: "645px") {
+      justify-content: center;
+    }
+    h4 {
+      margin-left: 44vw;
+      font-size: 2rem;
+      @media (max-width: "645px") {
+        margin-left: 0px;
+      }
+    }
+  }
+  .links:hover {
+    background-color: rgba(90, 29, 29, 0.479);
+  }
+}
+
+@media (max-width: "645px") {
+}
